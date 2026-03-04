@@ -6,8 +6,6 @@ This guide details the step-by-step process for pushing to GitHub and [TU Delft'
 
 *Based on [How to Push to GitHub and GitLab Simultaneously](https://catherinepope.com/posts/how-to-push-to-github-and-gitlab/) by Catherine Pope, extended with maintainer recovery workflows.*
 
----
-
 ## Prerequisites
 
 For this to work, you need:
@@ -15,8 +13,6 @@ For this to work, you need:
 - A GitHub repository with a remote configured.
 - A GitLab account.
 - [SSH keys for authentication with both GitHub and GitLab](https://gist.github.com/marcoandre1/4b0fbca83104e08d3e729a25a0cba4eb).
-
----
 
 ## General Setup
 
@@ -58,8 +54,6 @@ origin  git@github.com:<user>/<repo>.git (push)
 
 You now have one fetch source (GitHub) and two push destinations. Every `git push`, or explicitly `git push origin`, will push to both automatically.
 
----
-
 ## Maintainer Setup (Optional)
 
 Regular contributors only need the setup above. Maintainers should additionally add GitLab as a separate named remote, so they can fetch from it directly when needed - for example, if someone accidentally pushed to GitLab without pushing to GitHub, causing the two remotes to diverge.
@@ -79,8 +73,6 @@ origin  git@github.com:<user>/<repo>.git (fetch)
 origin  git@<gitlab-instance>:<user>/<repo>.git (push)
 origin  git@github.com:<user>/<repo>.git (push)
 ```
-
----
 
 ## Maintainer: Recovering from a Diverged GitLab
 
