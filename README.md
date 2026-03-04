@@ -1,4 +1,4 @@
-# How to Push to (and Pull from) GitHub and GitLab
+# How to Push to (and Pull from) GitHub and GitLab Simultaneously
 
 GitHub and GitLab are the most widely used Git remote repository hosting platforms in the world. This guide was built for the Open Interactive Textbooks project (OIT), managed by the Open Interactive Learning Materials (OILM) team under the TU Delft Library.
 
